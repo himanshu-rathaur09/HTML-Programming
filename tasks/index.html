@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evie Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .hero, .cta {
+            background: linear-gradient(135deg, #5145ff, #7460f5);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #08d6a0;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-top: 15px;
+        }
+
+        .section, .feature {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .light {
+            background: #f7f7f7;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: #777;
+            font-size: 14px;
+        }
+
+        .users, .frameworks {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .user-card {
+            max-width: 250px;
+        }
+
+        img {
+            width: 140px;
+            height: 120px;
+            object-fit: contain;
+        }
+
+        .feature img {
+            width: 200px;
+        }
+
+        .frameworks span {
+            background: #6955f5;
+            color: white;
+            padding: 10px 15px;
+        }
+
+        @media (min-width: 768px) {
+            .users {
+                flex-direction: row;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="hero">
+        <h1>A production-ready theme for your projects</h1>
+        <p>Evie is a lightweight, customizable website template.</p>
+        <a href="#download" class="btn">Download</a>
+    </header>
+
+    <section class="section light">
+        <h2>Who can use Evie?</h2>
+
+        <div class="users">
+            <div class="user-card">
+                <img src="programmer.png" alt="Programmer">
+                <h3>Programmers</h3>
+                <p>Create websites for your projects.</p>
+            </div>
+
+            <div class="user-card">
+                <img src="designer.png" alt="Designer">
+                <h3>Designers</h3>
+                <p>Share your creative artwork.</p>
+            </div>
+
+            <div class="user-card">
+                <img src="maker.png" alt="Maker">
+                <h3>Makers</h3>
+                <p>Build your web applications.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="feature">
+        <img src="styling.png" alt="Styling">
+        <h2>Natural Styling</h2>
+        <p>Simple design with easy customization.</p>
+    </section>
+
+    <section class="feature light">
+        <div class="frameworks">
+            <span>jQuery</span>
+            <span>Angular</span>
+            <span>Vue</span>
+            <span>React</span>
+        </div>
+
+        <h2>Framework Agnostic</h2>
+        <p>Choose your favourite front-end framework.</p>
+    </section>
+
+    <section class="feature">
+        <img src="production.png" alt="Production">
+        <h2>Ready for Production</h2>
+        <p>Start your project with a simple website template.</p>
+    </section>
+
+    <footer class="cta" id="download">
+        <h2>Get Started Now</h2>
+        <p>Begin your project instantly.</p>
+        <a href="#download" class="btn">Download Evie</a>
+    </footer>
+
+</body>
+</html>
